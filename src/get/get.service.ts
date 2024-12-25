@@ -28,7 +28,7 @@ export class GetService {
       if (teacherList[number].name.includes(name)) {
         const teacher = teacherList[number];
         teacherState[number + 1] =
-          `${teacher.name} :  ${teacher.communicationState === false ? '불가능' : '가능'} ${teacher.state}\n`;
+          `${teacher.name} : ${teacher.communicationState === false ? '불가능' : '가능'}, ${teacher.location}에서 ${teacher.state}\n`;
       }
     }
     return teacherState;
